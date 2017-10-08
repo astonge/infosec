@@ -1,5 +1,9 @@
 # Red Team
 
+* gethead.sh - gets HEAD from some webservesr.
+* getrobots.sh - get ```robots.txt`` from webservers.
+* hexstr.py - converts hex-encoded str back to ascii
+
 ### Very quick ping sweep
 ```sudo nmap -n -sn -PE -T5 $ipRange```
 

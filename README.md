@@ -4,14 +4,11 @@
 * getrobots.sh - get ```robots.txt``` from webservers.
 * hexstr.py - converts hex-encoded str back to ascii
 
+# Nmap
 ### Very quick ping sweep
 ```sudo nmap -n -sn -PE -T5 $ipRange```
 
-### Clone web page
-```wget -r -nH $url```
-
-
-## Webapps
+# Webapps
 
 Don't forget to enumerate everything. Even the things you haven't thought of.
 

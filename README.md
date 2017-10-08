@@ -27,12 +27,12 @@ Don't forget to enumerate everything. Even the things you haven't thought of.
 
 # Python
 
-## Dealing with hex encoded strings.
+### Dealing with hex encoded strings.
 
-Convert hex to dec, 6c = 'l'
+#### Convert hex to dec, 6c = 'l'
 ```dec = int("6c", 16)```
 
-### Print that in ascii
+#### Print that in ascii
 ```print chr(dec)```
 
 ## XXE (XML External Entity)

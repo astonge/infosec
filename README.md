@@ -8,7 +8,7 @@
 ### Very quick ping sweep
 ```sudo nmap -n -sn -PE -T5 $ipRange```
 ### Slow (quickest?) stealth SYN scan, all ports, NSE scripts, version detection.
-```sudo nmap -n -p- -A -v -O -T5 $ip```
+```sudo nmap -sC -sV -vv -n -p- -A -v -O -T5 $ip```
 
 # Webapps
 
